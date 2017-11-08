@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Terminus Ligne N</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta charset="utf-8">
 	<style type="text/css">
 		body {
 			font-family: sans-serif;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
 		}
 		.deselec {
 			opacity: .15;
@@ -55,13 +59,13 @@
 			<path d="m183.77 332.82c-15.792-9.4912-31.353-15.945-46.016-19.92" class="ligne ropo"/>
 			<path d="m137.75 312.89c-15.157-4.1089-29.354-5.5682-41.849-4.9937" class="ligne ropo"/>
 			<path d="m95.905 307.9c-35.805 1.6461-57.644 19.991-48.108 40.542" class="ligne ropo"/>
-			<path d="m47.797 348.44c3.8965 8.3974 13.032 17.163 28.593 25.308" class="ligne ropo"/>
+			<path d="m47.797 348.44c3.8965 8.3974 17.41 20.362 40.252 28.001" class="ligne ropo"/>
 			<path d="m29.36 141.34c-15.959 17.739-5.5742 32.601 16.703 41.723" class="ligne mopi"/>
 			<path d="m46.063 183.06c15.183 6.2169 35.89 9.7669 57.545 9.743" class="ligne mopi"/>
 			<path d="m103.61 192.81c17.361-0.0192 35.331-2.3354 51.552-7.416" class="ligne mopi"/>
 			<path d="m155.16 185.39c5.3408-1.6727 10.492-3.6451 15.37-5.9339 15.65-7.3437 31.856-11.88 47.295-13.753" class="ligne mopi"/>
 			<path d="m217.82 165.7c22.358-2.7114 43.108 0.16482 58.236 8.1952" class="ligne mopi"/>
-			<path d="m276.06 173.9c18.002 9.556 28.043 26.411 23.359 49.834" class="ligne mopi"/>
+			<path d="m276.06 173.9c27.441 10.128 38.471 39.28 14.91 55.41" class="ligne mopi"/>
 		</g>
 		<g class="station ropo gopi mopi pado">
 			<circle cx="49.44" cy="517.75" r="5"/>
@@ -241,7 +245,7 @@
 			}
 			
 			for (var i = 0; i < c.length; i++) {
-				c[i].addEventListener('click', function(){
+				c[i].addEventListener('mouseenter', function(){
 					selecStations(this.id)
 				})
 			}
